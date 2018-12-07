@@ -12,13 +12,11 @@ client.on('message', message => {
   	}
 });
 
-client.on('ready', () => {
-client.user.setGame(``,'https://www.twitch.tv/v5bz'); 
-}); 
+
 
 client.on('ready', async() => {
-var server = "514044187344109569"; // ايدي السررفر
-var channel = "514044229941723139";//ايدي الروم
+var server = "520576939690557470"; // ايدي السررفر
+var channel = "520576978693259264";//ايدي الروم
     setInterval(()=>{
     client.guilds.get(server).channels.get(channel).send('**Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , **')
     },305);
@@ -31,3 +29,15 @@ var channel = "514044229941723139";//ايدي الروم
 client.login(process.env.BOT_TOKEN);
 
 
+client2.on('ready', async() => {
+var server = "520576939690557470"; // ايدي السررفر
+var channel = "520577003355635740";//ايدي الروم
+    setInterval(()=>{
+    client2.guilds.get(server).channels.get(channel).send('**Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , **')
+    },305);
+})
+
+
+
+// THIS  MUST  BE  THIS  WAY
+client2.login(process.env.BOT_TOKEN2);
